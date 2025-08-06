@@ -1,0 +1,8 @@
+<h2>Sanitize Input Example</h2>
+
+<textarea [(ngModel)]="input" rows="4" cols="50" placeholder="Enter HTML..."></textarea>
+<br>
+<button (click)="sanitizeInput()">Sanitize</button>
+<p>Character count: {{ input.length }}</p>
+<h3>Sanitized Output:</h3>
+<pre>{{sanitized}}</pre>
